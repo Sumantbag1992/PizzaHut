@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="address" value="lulu mall bangalore"/>
+  <parameter name="name" value="Sumant Bag"/>
+  <parameter name="mobile" value="8900158120"/>
+  <parameter name="email" value="sumantbag01@gmail.com"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="stepDefinition.testNG">
+        <methods>
+          <include name="pizzaAddItemToBasketFlow" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- stepDefinition.testNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
